@@ -24,6 +24,6 @@ Make sure that the script acts the same on every sheet. The joy of VBA is that i
 
 -------------------------------------------------------
 ### References
-	* Made with reference to https://github.com/sean-galloway/VBA-challenge
+	* Made with reference to (https://github.com/ermiasgelaye/VBA-challenge)
 	* Nothing was full sale copy pasted
-	* Other than the one thing noted in the code I just used his code as reference to debug my own.
+	* Other than the one thing noted in the code I just used their code as reference to debug my own.
