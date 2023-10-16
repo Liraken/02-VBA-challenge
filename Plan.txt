@@ -1,0 +1,89 @@
+Define Variables
+	Ticker - String
+	year_open - double
+	year_close
+	yearly_change
+	total_stock_volume
+	percent_change
+	start_data (SummaryTableStart) int
+	ws
+
+For Each ws In Worksheets
+	Asigns summary table headers
+	
+	Sets 
+	start_summary = 2
+	start_data = 2 
+	total_stock_volume = 0
+	
+	Determine lastrow
+
+		Starts for loop i = 2 to lastrow
+			Checks if next cell is a new ticker
+			Grabs ticker
+			grab year_open using start_data
+			grab year_close using i
+			
+			J loop using start_data to i to find total_stock_volume
+		
+			If year_open = 0 Then
+				percent_change = year_close
+			Else
+				yearly_change = year_close - year_open
+
+				percent_change = yearly_change / year_open
+			End if
+
+		Paste ticker, yearly_change, total_stock_volume and percent_change in summary table using start_data
+
+		format percent change into a percent
+
+		incriment start_data
+
+		reset variables to 0 (total_stock_volume, yearly_change, percent_change)
+
+		previous_i = i
+
+	    End if
+
+	Next i	
+
+Find klastrow "J" row
+
+	define 3 new variables and set them to zero
+	greatest_increase
+	greatest_decrease
+	greatest_voluume
+		For k = k to klastrow
+			
+				
+    ws.Range("O2").Value = increase_name
+    ws.Range("O3").Value = decrease_name
+    ws.Range("O4").Value = greatest_name
+    ws.Range("P2").Value = Increase
+    ws.Range("P3").Value = Decrease
+    ws.Range("P4").Value = Greatest
+
+
+
+    jEndRow = ws.Cells(Rows.Count, "J").End(xlUp).Row
+    
+
+        For j = 2 To jEndRow
+            
+            'if greater than or less than zero
+            If ws.Cells(j, 10) > 0 Then
+            
+                ws.Cells(j, 10).Interior.ColorIndex = 4
+                
+            Else
+            
+                ws.Cells(j, 10).Interior.ColorIndex = 3
+            End If
+            
+        Next j
+
+
+
+Lastrow = ws.Cells(Rows.Count, 1).End(xlUp).Row
+ws.Columns("A:Q").AutoFit
