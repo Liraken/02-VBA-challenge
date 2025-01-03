@@ -7,11 +7,11 @@
 - **`Resources/`**: Contains the initial dataset (`CSV` file) used for this project.
 - **`Starter_Code/`**: Contains blank starter files provided at the beginning of the assignment.
 - **`VBA_challenge.xlsm`**: The main excel file containing the completed analysis and code.
-- **`Notes`**: Containes any relevant notes if any exist.
+- **`Notes`**: Contains any relevant notes if any exist.
 
-## Sources / Refrences
+## Sources / References
 * Header image: NA
-* Repos used as refrence: 
+* Repos used as reference: 
   * https://github.com/ermiasgelaye/VBA-challenge
 
 ## Background
